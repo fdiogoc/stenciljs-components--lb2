@@ -1,6 +1,10 @@
 {
-  "name": "lb2-comp-1",
+  "name": "lb2-components",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "  https://github.com/fdiogoc/stenciljs-components--lb2.git"
+  },
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
