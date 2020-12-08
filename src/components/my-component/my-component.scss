@@ -1,0 +1,104 @@
+@import '../../global/app.scss';
+
+:host {
+  display: block;
+  position: fixed;
+  min-width: 6rem;
+  min-height: 6rem;
+  max-width: 206px;
+  width: auto;
+  height: auto;
+  background-color: $grey-dark;
+  border-radius: 20px;
+  color: #fff;
+  padding: 6px;
+  font-family: $font-family;
+  .mainSvg {
+    background: #000;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    fill: var(--color, $blue);
+  }
+
+  .value {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color, $blue);
+    .porcentagem {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .ocupacao {
+      font-size: 11px;
+      display: block;
+      font-weight: 200;
+      color: $grey-light;
+    }
+  }
+
+  .progressBar {
+    width: 100%;
+    height: 9px;
+    border-radius: 5px;
+    background-color: $black;
+    position: relative;
+    .filler {
+      width: 75%;
+      height: 9px;
+      border-radius: inherit;
+      transition: width 0.2s ease-in;
+      background: var(--color, $blue);
+      width: calc(var(--value, 0) * 100% / var(--maxValue, 100));
+      max-width: 100%;
+    }
+  }
+  .name {
+    font-weight: 800;
+    min-height: 100%;
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+  }
+  .meio {
+    .firstLine {
+      border-top: 1px solid var(--color, $blue);
+      border-right: 1px solid var(--color, $blue);
+      border-radius: 0px 5px 0px 0px;
+      svg {
+        fill: var(--color, $blue);
+      }
+      .lung {
+        color: var(--color, $blue);
+      }
+    }
+    .secondLine {
+      background-color: var(--color, $blue);
+      border-radius: 0px 0px 5px 0px;
+      .break {
+        color: $black;
+        margin-top: 2px;
+        font-weight: 400;
+      }
+    }
+
+    .fillFirstLine {
+      z-index: -1;
+      width: 50px;
+      height: 1px;
+      position: absolute;
+      left: -50px;
+      top: -1px;
+      background-color: var(--color, $blue);
+    }
+    .fillSecondLine {
+      z-index: -1;
+      width: 50px;
+      height: 100%;
+      position: absolute;
+      left: -50px;
+      top: 0px;
+      background-color: var(--color, $blue);
+    }
+  }
+}

@@ -8,7 +8,22 @@
     <script type="module" src="/build/lb2-comp-1.esm.js"></script>
     <script nomodule src="/build/lb2-comp-1.js"></script>
   </head>
-  <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <body style="background-color: #111">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <lb2-component name="Manutenção" icon="vassoura" value="80" maxValue="99" lung="10" break="0"></lb2-component>
+        </ion-col>
+        <ion-col>
+          <lb2-component name="Mercearia salgada" icon="vassoura" value="1" maxValue="100"></lb2-component>
+        </ion-col>
+        <ion-col>
+          <lb2-component name="Almoxarifado" icon="vassoura" value="00" maxValue="99"></lb2-component>
+        </ion-col>
+        <ion-col>
+          <lb2-component name="Almoxarifado" icon="vassoura" value="15" maxValue="99"></lb2-component>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </body>
 </html>

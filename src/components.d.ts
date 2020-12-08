@@ -7,18 +7,12 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface Lb2Component {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "break": number;
+        "icon": string;
+        "lung": number;
+        "maxValue": number;
+        "name": string;
+        "value": number;
     }
     interface Lb2Component2 {
         "name": string;
@@ -44,18 +38,12 @@ declare global {
 }
 declare namespace LocalJSX {
     interface Lb2Component {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "break"?: number;
+        "icon"?: string;
+        "lung"?: number;
+        "maxValue"?: number;
+        "name"?: string;
+        "value"?: number;
     }
     interface Lb2Component2 {
         "name"?: string;

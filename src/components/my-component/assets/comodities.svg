@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69" height="66" viewBox="0 0 69 66">
+  <defs>
+    <clipPath id="clip-comodities">
+      <rect width="69" height="66"/>
+    </clipPath>
+  </defs>
+  <g id="comodities" clip-path="url(#clip-comodities)">
+
+    <g id="_031-shopping-cart" data-name="031-shopping-cart" transform="translate(15.534 15.618)">
+      <g id="Group_741" data-name="Group 741" transform="translate(0 0)">
+        <g id="Group_740" data-name="Group 740">
+          <path id="Path_485" data-name="Path 485" d="M13.161,51.93V49.145H34.385l4.137-16.222H31.656V25.376H23.292v2.016H13.72v5.532H9.2L7,24.6H0v2.258H5.263l5.641,21.3v6.025H12.99a3.746,3.746,0,1,0,6.874,0h6.227a3.746,3.746,0,1,0,6.874,0h1.7V51.93Zm16.367,2.258a1.488,1.488,0,1,1-1.488,1.488A1.49,1.49,0,0,1,29.529,54.188Zm-13.1,0a1.488,1.488,0,1,1-1.488,1.488A1.49,1.49,0,0,1,16.427,54.188ZM25.55,27.634H29.4v5.29H25.55ZM15.978,29.65h7.315v3.273H15.978ZM12.9,46.887,9.8,35.181H35.616L32.631,46.887Z" transform="translate(0 -24.603)" fill="#faff2e"/>
+        </g>
+      </g>
+      <g id="Group_743" data-name="Group 743" transform="translate(14.6 13.038)">
+        <g id="Group_742" data-name="Group 742">
+          <rect id="Rectangle_1569" data-name="Rectangle 1569" width="2.258" height="7.161" fill="#faff2e"/>
+        </g>
+      </g>
+      <g id="Group_745" data-name="Group 745" transform="translate(19.272 13.038)">
+        <g id="Group_744" data-name="Group 744">
+          <rect id="Rectangle_1570" data-name="Rectangle 1570" width="2.258" height="7.161" fill="#faff2e"/>
+        </g>
+      </g>
+      <g id="Group_747" data-name="Group 747" transform="translate(23.945 13.038)">
+        <g id="Group_746" data-name="Group 746">
+          <rect id="Rectangle_1571" data-name="Rectangle 1571" width="2.258" height="7.161" fill="#faff2e"/>
+        </g>
+      </g>
+      <g id="Group_749" data-name="Group 749" transform="translate(28.619 13.038)">
+        <g id="Group_748" data-name="Group 748">
+          <rect id="Rectangle_1572" data-name="Rectangle 1572" width="2.258" height="7.161" fill="#faff2e"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

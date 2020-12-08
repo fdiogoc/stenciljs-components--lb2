@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69" height="66" viewBox="0 0 69 66">
+  <defs>
+    <clipPath id="clip-mercearia">
+      <rect width="69" height="66"/>
+    </clipPath>
+  </defs>
+  <g id="mercearia" clip-path="url(#clip-mercearia)">
+
+    <g id="_033-cheese" data-name="033-cheese" transform="translate(13.591 16.739)">
+      <g id="Group_755" data-name="Group 755" transform="translate(10.904 16.873)">
+        <g id="Group_754" data-name="Group 754">
+          <path id="Path_487" data-name="Path 487" d="M138.792,263.062a4.46,4.46,0,1,0,4.46,4.46A4.465,4.465,0,0,0,138.792,263.062Zm0,6.484a2.024,2.024,0,1,1,2.024-2.024A2.026,2.026,0,0,1,138.792,269.546Z" transform="translate(-134.332 -263.062)" fill="#ea003f"/>
+        </g>
+      </g>
+      <g id="Group_757" data-name="Group 757" transform="translate(0 0)">
+        <g id="Group_756" data-name="Group 756">
+          <path id="Path_488" data-name="Path 488" d="M41.553,68.444a14.23,14.23,0,0,0-6.732-10.839,17.315,17.315,0,0,0-5.786-2.346l-.359-.061L0,67.779v7.392H1.218a2.024,2.024,0,0,1,0,4.048H0V87.8H41.56V68.509ZM28.964,57.733a15.388,15.388,0,0,1,4.553,1.931,11.625,11.625,0,0,1,5.4,7.693H7.027Zm5.574,12.321a3.544,3.544,0,0,1-7.088,0c0-.087,0-.174.01-.26h7.067C34.534,69.88,34.538,69.966,34.538,70.054ZM24.549,85.361a2.621,2.621,0,0,1,5.212,0Zm14.575,0H32.2a5.057,5.057,0,0,0-10.1,0H2.437V81.486a4.461,4.461,0,0,0,0-8.582v-3.11H25.02c0,.087-.006.173-.006.26a5.98,5.98,0,0,0,11.961,0c0-.087,0-.174-.006-.26h2.155V85.361Z" transform="translate(0 -55.199)" fill="#ea003f"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
