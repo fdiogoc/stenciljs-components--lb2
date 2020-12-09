@@ -1,4 +1,4 @@
-import { Component, Prop, h, Element, State } from '@stencil/core';
+import { Component, Prop, h, Element, Watch } from '@stencil/core';
 
 @Component({
   tag: 'lb2-component',
@@ -14,6 +14,14 @@ export class MyComponent {
   @Prop() lung: number = 0;
   @Prop() break: number = 0;
 
+  @Watch('value')
+  watchHandlerValue() {
+    this.forceUpdate();
+  }
+  @Watch('maxValue')
+  watchHandlerMax() {
+    this.forceUpdate();
+  }
   @Element() el: HTMLElement;
 
   private getColor(): string {
@@ -25,6 +33,7 @@ export class MyComponent {
     if (porcentage < 80) return $blue;
     if (porcentage >= 80 && porcentage < 90) return $yellow;
     if (porcentage >= 90) return $red;
+    return $blue;
   }
   private forceUpdate() {
     this.el.style.setProperty('--color', this.getColor());

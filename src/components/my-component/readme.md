@@ -12,9 +12,9 @@
 | `break`    | `break`     |             | `number` | `0`         |
 | `icon`     | `icon`      |             | `string` | `undefined` |
 | `lung`     | `lung`      |             | `number` | `0`         |
-| `maxValue` | `max-value` |             | `number` | `100`       |
+| `maxValue` | `max-value` |             | `number` | `undefined` |
 | `name`     | `name`      |             | `string` | `undefined` |
-| `value`    | `value`     |             | `number` | `0`         |
+| `value`    | `value`     |             | `number` | `undefined` |
 
 
 ## Dependencies

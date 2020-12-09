@@ -1,6 +1,6 @@
 {
   "name": "lb2-components",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "repository": {
     "type": "git",
     "url": "  https://github.com/fdiogoc/stenciljs-components--lb2.git"
@@ -34,10 +34,7 @@
   "license": "MIT",
   "devDependencies": {
     "fs-extra": "^9.0.1",
-    "glob": "^7.1.6",
     "glob-promise": "^3.4.0",
-    "path": "^0.12.7",
-    "svgson": "^4.1.0",
-    "util": "^0.12.3"
+    "path": "^0.12.7"
   }
 }
