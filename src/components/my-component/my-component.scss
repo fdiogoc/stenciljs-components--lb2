@@ -5,7 +5,7 @@
   min-width: 6rem;
   min-height: 6rem;
   max-width: 100%;
-  width: 210px;
+  width: 195px;
   padding: 5px;
   background-color: $grey-dark;
   border-radius: 20px;
@@ -64,7 +64,7 @@
     display: inline-flex;
     align-items: center;
     height: 50px;
-    word-break: break-word;
+    overflow-wrap: break-word;
     position: absolute;
     top: -3px;
   }
