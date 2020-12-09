@@ -28,6 +28,8 @@
     font-size: 25px;
     font-weight: 700;
     color: var(--color, $blue);
+    float: right;
+    text-align: right;
     .porcentagem {
       font-size: 15px;
       font-weight: 500;
@@ -63,6 +65,8 @@
     align-items: center;
     height: 50px;
     word-break: break-word;
+    position: absolute;
+    top: -3px;
   }
   .meio {
     .firstLine {

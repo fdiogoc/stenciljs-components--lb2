@@ -60,7 +60,7 @@ export class MyComponent {
     return (
       <ion-grid class="sticky">
         <ion-row class="firstLine">
-          <ion-col size="8">
+          <ion-col size="7">
             <div>
               <span class="name">{this.name}</span>
             </div>
