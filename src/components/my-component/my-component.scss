@@ -4,13 +4,13 @@
   position: relative;
   min-width: 6rem;
   min-height: 6rem;
-  max-width: 206px;
-  width: auto;
-  height: auto;
+  max-width: 100%;
+  width: 210px;
+  padding: 5px;
   background-color: $grey-dark;
   border-radius: 20px;
   color: #fff;
-  padding: 6px;
+  margin: 6px;
   font-family: $font-family;
   display: inline-block;
   .sticky {
@@ -33,7 +33,7 @@
       font-weight: 500;
     }
     .ocupacao {
-      font-size: 11px;
+      font-size: 10px;
       display: block;
       font-weight: 200;
       color: $grey-light;
@@ -52,16 +52,17 @@
       border-radius: inherit;
       transition: width 0.2s ease-in;
       background: var(--color, $blue);
-      width: calc(var(--value, 0) * 100% / var(--maxValue, 100));
+      width: calc((var(--value, 0) * 100%) / var(--maxValue, 100));
       max-width: 100%;
     }
   }
   .name {
-    font-weight: 800;
+    font-weight: 700;
     min-height: 100%;
     display: inline-flex;
     align-items: center;
     height: 50px;
+    word-break: break-word;
   }
   .meio {
     .firstLine {

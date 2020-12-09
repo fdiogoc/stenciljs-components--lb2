@@ -1,4 +1,4 @@
-import { Component, Prop, h, Element } from '@stencil/core';
+import { Component, Prop, h, Element, State } from '@stencil/core';
 
 @Component({
   tag: 'lb2-component',
@@ -9,8 +9,8 @@ import { Component, Prop, h, Element } from '@stencil/core';
 export class MyComponent {
   @Prop() name: string;
   @Prop() icon: string;
-  @Prop() value: number = 0;
-  @Prop() maxValue: number = 100;
+  @Prop() value: number;
+  @Prop() maxValue: number;
   @Prop() lung: number = 0;
   @Prop() break: number = 0;
 
@@ -21,10 +21,15 @@ export class MyComponent {
     const $red = '#ea003f';
     const $yellow = '#faff2e';
     const porcentage = (this.value * 100) / this.maxValue;
-
+    console.log(porcentage);
     if (porcentage < 80) return $blue;
     if (porcentage >= 80 && porcentage < 90) return $yellow;
     if (porcentage >= 90) return $red;
+  }
+  private forceUpdate() {
+    this.el.style.setProperty('--color', this.getColor());
+    this.el.style.setProperty('--value', this.value.toString());
+    this.el.style.setProperty('--maxValue', this.maxValue.toString());
   }
 
   componentDidLoad() {
@@ -39,17 +44,14 @@ export class MyComponent {
       element.setAttribute('href', fontCssUrl);
       document.head.appendChild(element);
     }
+    this.forceUpdate();
   }
 
   render() {
-    this.el.style.setProperty('--color', this.getColor());
-    this.el.style.setProperty('--value', this.value.toString());
-    this.el.style.setProperty('--maxValue', this.maxValue.toString());
-
     return (
       <ion-grid class="sticky">
         <ion-row class="firstLine">
-          <ion-col>
+          <ion-col size="8">
             <div>
               <span class="name">{this.name}</span>
             </div>
@@ -57,7 +59,7 @@ export class MyComponent {
           <ion-col>
             <div class="ion-text-end">
               <span class="value ">
-                {this.value}
+                {Math.round((this.value * 100) / this.maxValue)}
                 <span class="porcentagem">%</span>
                 <span class="ocupacao">OCUPAÇÃO</span>
               </span>
