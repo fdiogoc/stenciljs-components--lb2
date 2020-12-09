@@ -1,8 +1,7 @@
 @import '../../global/app.scss';
 
 :host {
-  display: block;
-  position: fixed;
+  position: relative;
   min-width: 6rem;
   min-height: 6rem;
   max-width: 206px;
@@ -13,6 +12,10 @@
   color: #fff;
   padding: 6px;
   font-family: $font-family;
+  display: inline-block;
+  .sticky {
+    position: sticky;
+  }
   .mainSvg {
     background: #000;
     width: 76px;

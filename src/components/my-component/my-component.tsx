@@ -47,7 +47,7 @@ export class MyComponent {
     this.el.style.setProperty('--maxValue', this.maxValue.toString());
 
     return (
-      <ion-grid>
+      <ion-grid class="sticky">
         <ion-row class="firstLine">
           <ion-col>
             <div>
