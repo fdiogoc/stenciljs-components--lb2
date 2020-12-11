@@ -1,4 +1,4 @@
-import { Component, Prop, h, Element, Watch, getAssetPath } from '@stencil/core';
+import { Component, Prop, h, Element, Watch } from '@stencil/core';
 
 @Component({
   tag: 'lb2-component',
