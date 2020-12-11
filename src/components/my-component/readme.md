@@ -11,6 +11,7 @@
 | ---------- | ----------- | ----------- | -------- | ----------- |
 | `break`    | `break`     |             | `number` | `0`         |
 | `icon`     | `icon`      |             | `string` | `undefined` |
+| `image`    | `image`     |             | `string` | `undefined` |
 | `lung`     | `lung`      |             | `number` | `0`         |
 | `maxValue` | `max-value` |             | `number` | `undefined` |
 | `name`     | `name`      |             | `string` | `undefined` |
