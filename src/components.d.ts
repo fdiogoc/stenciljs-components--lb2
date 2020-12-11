@@ -9,13 +9,19 @@ export namespace Components {
     interface Lb2Component {
         "break": number;
         "icon": string;
+        "image": string;
         "lung": number;
         "maxValue": number;
         "name": string;
         "value": number;
     }
-    interface Lb2Component2 {
+    interface Lb2ComponentHd {
+        "break": number;
+        "image": string;
+        "lung": number;
+        "maxValue": number;
         "name": string;
+        "value": number;
     }
 }
 declare global {
@@ -25,32 +31,38 @@ declare global {
         prototype: HTMLLb2ComponentElement;
         new (): HTMLLb2ComponentElement;
     };
-    interface HTMLLb2Component2Element extends Components.Lb2Component2, HTMLStencilElement {
+    interface HTMLLb2ComponentHdElement extends Components.Lb2ComponentHd, HTMLStencilElement {
     }
-    var HTMLLb2Component2Element: {
-        prototype: HTMLLb2Component2Element;
-        new (): HTMLLb2Component2Element;
+    var HTMLLb2ComponentHdElement: {
+        prototype: HTMLLb2ComponentHdElement;
+        new (): HTMLLb2ComponentHdElement;
     };
     interface HTMLElementTagNameMap {
         "lb2-component": HTMLLb2ComponentElement;
-        "lb2-component2": HTMLLb2Component2Element;
+        "lb2-component-hd": HTMLLb2ComponentHdElement;
     }
 }
 declare namespace LocalJSX {
     interface Lb2Component {
         "break"?: number;
         "icon"?: string;
+        "image"?: string;
         "lung"?: number;
         "maxValue"?: number;
         "name"?: string;
         "value"?: number;
     }
-    interface Lb2Component2 {
+    interface Lb2ComponentHd {
+        "break"?: number;
+        "image"?: string;
+        "lung"?: number;
+        "maxValue"?: number;
         "name"?: string;
+        "value"?: number;
     }
     interface IntrinsicElements {
         "lb2-component": Lb2Component;
-        "lb2-component2": Lb2Component2;
+        "lb2-component-hd": Lb2ComponentHd;
     }
 }
 export { LocalJSX as JSX };
@@ -58,7 +70,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "lb2-component": LocalJSX.Lb2Component & JSXBase.HTMLAttributes<HTMLLb2ComponentElement>;
-            "lb2-component2": LocalJSX.Lb2Component2 & JSXBase.HTMLAttributes<HTMLLb2Component2Element>;
+            "lb2-component-hd": LocalJSX.Lb2ComponentHd & JSXBase.HTMLAttributes<HTMLLb2ComponentHdElement>;
         }
     }
 }
