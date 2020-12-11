@@ -58,7 +58,6 @@ export class MyComponent {
   }
 
   render() {
-    const icon = this.icon;
     return (
       <ion-grid class="sticky">
         <ion-row class="firstLine">
