@@ -76,17 +76,15 @@ export class Lb2Component {
           </ion-col>
         </ion-row>
         <ion-row class="meio">
-          {this.image != null ? (
-            <ion-col>
+          <div class="image">
+            {this.image != null ? (
               <div class="mainSvg ">
                 <img src={this.image} width="60" />
               </div>
-            </ion-col>
-          ) : (
-            <ion-col>
+            ) : (
               <div class="mainSvg "></div>
-            </ion-col>
-          )}
+            )}
+          </div>
 
           <ion-col>
             <ion-row class="firstLine">
