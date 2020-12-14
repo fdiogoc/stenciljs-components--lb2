@@ -37,8 +37,8 @@ export class Lb2Component {
   }
   private forceUpdate() {
     this.el.style.setProperty('--color', this.getColor());
-    this.el.style.setProperty('--value', this.value.toString());
-    this.el.style.setProperty('--maxValue', this.maxValue.toString());
+    this.el.style.setProperty('--value', this.value?.toString());
+    this.el.style.setProperty('--maxValue', this.maxValue?.toString());
   }
 
   componentDidLoad() {
@@ -159,7 +159,9 @@ export class Lb2Component {
         <ion-row>
           <ion-col>
             <div class="progressBar">
-              <div class="filler "></div>
+              <div class="filler"></div>
+              <div class="bar80"></div>
+              <div class="bar90"></div>
             </div>
           </ion-col>
         </ion-row>

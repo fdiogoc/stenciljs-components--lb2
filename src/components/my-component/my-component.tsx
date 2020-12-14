@@ -216,6 +216,8 @@ export class MyComponent {
           <ion-col>
             <div class="progressBar">
               <div class="filler "></div>
+              <div class="bar80"></div>
+              <div class="bar90"></div>
             </div>
           </ion-col>
         </ion-row>
