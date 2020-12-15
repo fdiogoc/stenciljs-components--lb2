@@ -77,14 +77,12 @@ export class MyComponent {
           </ion-col>
         </ion-row>
         <ion-row class="meio">
-          {this.image != null ? (
-            <ion-col>
+          <div class="image">
+            {this.image != null ? (
               <div class="mainSvg ">
                 <img src={this.image} width="60" />
               </div>
-            </ion-col>
-          ) : (
-            <ion-col>
+            ) : (
               <div class="mainSvg ">
                 <svg width="69" height="66" viewBox="0 0 69 66">
                   <g id="limpeza" clip-path="url(#clip-limpeza)">
@@ -99,9 +97,8 @@ export class MyComponent {
                   </g>
                 </svg>
               </div>
-            </ion-col>
-          )}
-
+            )}
+          </div>
           <ion-col>
             <ion-row class="firstLine">
               <ion-col>

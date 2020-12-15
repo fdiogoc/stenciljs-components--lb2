@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/lb2-comp-1.esm.js"></script>
-    <script nomodule src="/build/lb2-comp-1.js"></script>
-  </head>
-  <body style="background-color: #111">
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-        <lb2-component name="ManutençãoManutenção" value="80" max-value="99" lung="10" break="0" ></lb2-component>
-        </ion-col>
-        <ion-col>
-          <lb2-component name="Mercearia salgada" icon="vassoura" value="1" max-value="10"></lb2-component>
-        </ion-col>
-        <ion-col>
-          <lb2-component name="Almoxarifado" icon="vassoura" value="00" max-value="99"></lb2-component>
-        </ion-col>
-        <ion-col>
-          <lb2-component name="Almoxarifado" icon="vassoura" value="15" max-value="99"></lb2-component>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-     <ion-grid>
-      <ion-row>
-        <ion-col>
-        <lb2-component-hd name="ManutençãoManutenção" value="80" max-value="99" lung="10" break="0" image="/build/assets/logos/LOGO_BIGOLIN.png"></lb2-component>
-        </ion-col>
-        <ion-col>
-          <lb2-component-hd name="Mercearia salgada" icon="vassoura" value="1" max-value="10"></lb2-component>
-        </ion-col>
-        <ion-col>
-          <lb2-component-hd name="Almoxarifado" icon="vassoura" value="91" max-value="100"></lb2-component>
-        </ion-col>
-        <ion-col>
-          <lb2-component-hd name="Almoxarifado" icon="vassoura" value="15" max-value="99"></lb2-component>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-   </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/lb2-comp-1.esm.js"></script>
+  <script nomodule src="/build/lb2-comp-1.js"></script>
+</head>
+
+<body style="background-color: #111">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <lb2-component name="Mercearia salgada" icon="vassoura" value="1" max-value="10"></lb2-component>
+      </ion-col>
+      <ion-col>
+        <lb2-component name="Almoxarifado" icon="vassoura" value="00" max-value="99"></lb2-component>
+      </ion-col>
+      <ion-col>
+        <lb2-component-hd name="ManutençãoManutenção" value="80" max-value="99" lung="10" break="0"
+          image="/build/assets/logos/LOGO_BIGOLIN.png">
+          </lb2-component>
+      </ion-col>
+      </ion-col>
+      <ion-col>
+        <lb2-component-hd name="Almoxarifado" icon="vassoura" value="15" max-value="99">
+          </lb2-component>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <lb2-simple-text name="Tarefas sem assumir" value="43"></lb2-simple-text>
+      </ion-col>
+      <ion-col>
+        <lb2-simple-text name="SLA perdidos" value="19" color="#ea003f"></lb2-simple-text>
+      </ion-col>
+      <ion-col>
+        <lb2-simple-text name="Tarefas encerradas hoje" value="25" color="#fff"></lb2-simple-text>
+      </ion-col>
+
+      <ion-col>
+        <lb2-simple-text name="Tarefas sem assumir" value="43"></lb2-simple-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</body>
+
 </html>

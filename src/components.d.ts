@@ -23,6 +23,11 @@ export namespace Components {
         "name": string;
         "value": number;
     }
+    interface Lb2SimpleText {
+        "color": string;
+        "name": string;
+        "value": number;
+    }
 }
 declare global {
     interface HTMLLb2ComponentElement extends Components.Lb2Component, HTMLStencilElement {
@@ -37,9 +42,16 @@ declare global {
         prototype: HTMLLb2ComponentHdElement;
         new (): HTMLLb2ComponentHdElement;
     };
+    interface HTMLLb2SimpleTextElement extends Components.Lb2SimpleText, HTMLStencilElement {
+    }
+    var HTMLLb2SimpleTextElement: {
+        prototype: HTMLLb2SimpleTextElement;
+        new (): HTMLLb2SimpleTextElement;
+    };
     interface HTMLElementTagNameMap {
         "lb2-component": HTMLLb2ComponentElement;
         "lb2-component-hd": HTMLLb2ComponentHdElement;
+        "lb2-simple-text": HTMLLb2SimpleTextElement;
     }
 }
 declare namespace LocalJSX {
@@ -60,9 +72,15 @@ declare namespace LocalJSX {
         "name"?: string;
         "value"?: number;
     }
+    interface Lb2SimpleText {
+        "color"?: string;
+        "name"?: string;
+        "value"?: number;
+    }
     interface IntrinsicElements {
         "lb2-component": Lb2Component;
         "lb2-component-hd": Lb2ComponentHd;
+        "lb2-simple-text": Lb2SimpleText;
     }
 }
 export { LocalJSX as JSX };
@@ -71,6 +89,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "lb2-component": LocalJSX.Lb2Component & JSXBase.HTMLAttributes<HTMLLb2ComponentElement>;
             "lb2-component-hd": LocalJSX.Lb2ComponentHd & JSXBase.HTMLAttributes<HTMLLb2ComponentHdElement>;
+            "lb2-simple-text": LocalJSX.Lb2SimpleText & JSXBase.HTMLAttributes<HTMLLb2SimpleTextElement>;
         }
     }
 }
