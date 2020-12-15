@@ -3,7 +3,7 @@
 :host {
   position: relative;
   min-width: 210px;
-  max-width: 280px;
+  max-width: 260px;
   min-height: 6rem;
   width: 90%;
   padding: 5px;
@@ -131,7 +131,7 @@
       width: 50px;
       height: 1px;
       position: absolute;
-      left: -50px;
+      left: -49px;
       top: -1px;
       background-color: var(--color, $blue);
     }
@@ -140,7 +140,7 @@
       width: 50px;
       height: 100%;
       position: absolute;
-      left: -50px;
+      left: -49px;
       top: 0px;
       background-color: var(--color, $blue);
     }

@@ -43,8 +43,10 @@ export class Lb2SimpleText {
   render() {
     return (
       <Host>
-        <div class="name">{this.name}</div>
-        <div class="value">{this.value}</div>
+        <div class="container">
+          <div class="name">{this.name}</div>
+          <div class="value">{this.value}</div>
+        </div>
       </Host>
     );
   }
