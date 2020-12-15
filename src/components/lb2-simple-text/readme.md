@@ -6,6 +6,7 @@ Não aceita - fff / 01011
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property | Attribute | Description | Type     | Default     |
@@ -14,6 +15,7 @@ Não aceita - fff / 01011
 | `name`   | `name`    |             | `string` | `undefined` |
 | `value`  | `value`   |             | `number` | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
