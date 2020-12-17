@@ -1,17 +1,16 @@
 # lb2-simple-text
 
-\*caso a cor seja inválida sera azul -
-Aceita - #fff / #010101
-Não aceita - fff / 01011
 
-<!-- Auto Generated Below -->
+    <lb2-simple-text  [name]="name"  [value]="value" color="#fff"></lb2-simple-text>
+
+
 
 
 ## Properties
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `color`  | `color`   |             | `string` | `$blue`     |
+| `color`  | `color`   |   OK :thumbsup: #fff / #010101 NOTOK :thumbsdown: fff / 01011           | `string` | `$blue`     |
 | `name`   | `name`    |             | `string` | `undefined` |
 | `value`  | `value`   |             | `number` | `undefined` |
 
