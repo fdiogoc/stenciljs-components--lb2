@@ -10,6 +10,13 @@ body {
 .hold-wid {
   background-color: #1a1a1a !important;
 }
+.chart {
+  display: grid;
+  grid-column-gap: 4px;
+  grid-row-gap: 12px;
+  padding: 8px 5px 0px 5px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
 h3 {
   color: white;
   font-family: Sans-serif;
