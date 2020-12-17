@@ -1,6 +1,6 @@
 {
   "name": "lb2-components",
-  "version": "0.0.19",
+  "version": "0.0.26",
   "repository": {
     "type": "git",
     "url": "  https://github.com/fdiogoc/stenciljs-components--lb2.git"
@@ -24,7 +24,8 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "doc": "stencil build --docs-readme",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "patch-build-publish": "npm --no-git-tag-version version patch &&  stencil build --docs && npm publish"
   },
   "dependencies": {
     "@ionic/core": "^5.5.1",

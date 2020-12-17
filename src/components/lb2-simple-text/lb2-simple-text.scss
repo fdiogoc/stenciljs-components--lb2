@@ -18,6 +18,7 @@
     border-radius: inherit;
     border: 1px solid var(--color, $blue);
     width: 100%;
+    height: calc(100% - 15px);
   }
   .name {
     color: #fff;
