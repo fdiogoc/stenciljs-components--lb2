@@ -1,11 +1,16 @@
 {
   "name": "lb2-components",
-  "version": "0.0.30",
+  "version": "0.0.32",
   "repository": {
     "type": "git",
     "url": "  https://github.com/fdiogoc/stenciljs-components--lb2.git"
   },
-  "description": "Stencil Component Starter",
+  "author": {
+    "name": "Diogo Cardoso Fernandes",
+    "email": "diogo.fernandes@lb2.com.br",
+    "url": "https://github.com/fdiogoc"
+  },
+  "description": "LB2 Webcomponents",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
   "es2015": "dist/esm/index.mjs",
