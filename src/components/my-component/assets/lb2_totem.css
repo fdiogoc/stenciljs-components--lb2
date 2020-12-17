@@ -1,0 +1,21 @@
+body {
+  background-color: black !important;
+}
+.dashholder {
+  background-color: black !important;
+}
+.panel {
+  background-color: #1a1a1a !important;
+}
+.hold-wid {
+  background-color: #1a1a1a !important;
+}
+h3 {
+  color: white;
+  font-family: Sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 12px !important;
+  /*! background-color: white; */
+  /*! float: left; */
+}
