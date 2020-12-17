@@ -30,7 +30,7 @@ export class MyComponent {
     const $red = '#ea003f';
     const $yellow = '#faff2e';
     const porcentage = (this.value * 100) / this.maxValue;
-    console.log(porcentage);
+
     if (porcentage < 80) return $blue;
     if (porcentage >= 80 && porcentage < 90) return $yellow;
     if (porcentage >= 90) return $red;
