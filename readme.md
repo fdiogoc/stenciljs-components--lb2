@@ -2,6 +2,93 @@
 
 ## Using this component
 
-### Script tag
 
-[HOW TO USE](https://stenciljs.com/docs/javascript)
+## Getting Started
+
+To create a new project using an interactive cli, run:
+
+```bash
+npm init stencil
+```
+
+To start developing your new Stencil project, run:
+
+```bash
+npm start
+```
+
+
+## Creating components
+
+Stencil components are TypeScript classes with decorator metadata. The decorators themselves are purely build-time annotations so the compiler can read metadata about each component, and removed entirely for smaller efficient components.
+
+Create new components by creating files with a `.tsx` extension, such as `my-component.tsx`, and place them in `src/components`.
+
+```tsx
+import { Component, Prop, h } from '@stencil/core';
+
+@Component({
+  tag: 'my-component',
+  styleUrl: 'my-component.css'
+})
+export class MyComponent {
+
+  @Prop() first: string;
+
+  @Prop() last: string;
+
+  render() {
+    return (
+      <div>
+        Hello, my name is {this.first} {this.last}
+      </div>
+    );
+  }
+}
+```
+
+Note: the `.tsx` extension is required, as this is the standard for TypeScript classes that use JSX.
+
+To use this component, just use it like any other HTML element:
+
+```html
+<my-component first="Stencil" last="JS"></my-component>
+```
+
+
+## API
+
+The API for stencil closely mirrors the API for Custom Elements v1.
+
+### Components
+
+| Decorator      | Description                             |
+| -------------- | ---                                     |
+| `@Component()` | Indicate a class is a Stencil component. |
+|                |                                         |
+| `@Prop()`      | Creates a property that will exist on the element and be data-bound to this component.  |
+| `@State()`     | Creates a local state variable that will not be placed on the element. |
+| `@Method()`    | Expose specific methods to be publicly accessible. |
+
+
+## Why "Stencil?"
+
+A Stencil is a tool artists use for drawing perfect shapes easily. We want Stencil to be a similar tool for web developers: a tool that helps web developers build powerful Web Components and apps that use them, but without creating non-standard runtime requirements.
+
+Stencil is a tool developers use to create Web Components with some powerful features baked in, but it gets out of the way at runtime.
+
+- [Using Web Components in Ionic - Polymer Summit](https://youtu.be/UfD-k7aHkQE)
+- [Stencil: A built-time approach to the web - JSConf EU](https://youtu.be/M1F81V-NhP0)
+- [Architecting A Component Compiler - dotJS](https://youtu.be/RZ6MLELGsD8)
+
+
+## Related
+
+ - [Stencil Documentation](https://stenciljs.com/)
+ - [Stencil Worldwide Slack](https://stencil-worldwide.herokuapp.com)
+ - [Ionic](https://ionicframework.com/)
+ - [Ionic Worldwide Slack](http://ionicworldwide.herokuapp.com/)
+ - [Ionicons](http://ionicons.com/)
+ - [Capacitor](https://capacitorjs.com/)
+
+
